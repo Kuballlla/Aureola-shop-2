@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aureola Shop</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#05070d;color:#fff}
+
+header{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:15px 40px;background:rgba(0,0,0,0.6);backdrop-filter:blur(10px);z-index:1000}
+.logo{font-weight:700;font-size:20px;color:#b388ff}
+nav a{margin:0 15px;color:#aaa;text-decoration:none}
+nav a:hover{color:#fff}
+
+.hero{height:100vh;background:linear-gradient(90deg,rgba(0,0,0,0.85),rgba(0,0,0,0.2)),url('hero.jpg');background-size:cover;background-position:center;display:flex;align-items:center;padding:0 60px}
+.hero-content{max-width:600px}
+.hero h1{font-size:48px;font-weight:700}
+.hero h1 span{color:#9c6bff}
+.hero p{margin:20px 0;color:#ccc}
+.btn{padding:12px 25px;border-radius:10px;background:linear-gradient(90deg,#7a5cff,#00e0ff);border:none;color:#fff;font-weight:600;cursor:pointer}
+
+.features{display:flex;justify-content:space-around;margin-top:-60px;padding:20px 40px}
+.feature{background:#0d111a;padding:15px 20px;border-radius:12px;color:#aaa;font-size:14px}
+
+.section-title{text-align:center;margin:60px 0 20px;font-size:24px;font-weight:600}
+
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:20px 40px}
+.product{background:#0d111a;border-radius:16px;padding:15px;transition:0.3s}
+.product:hover{transform:translateY(-5px)}
+.product img{width:100%;border-radius:12px}
+.product h3{margin:10px 0}
+.price{color:#00e0ff;font-weight:600}
+.old{color:#666;text-decoration:line-through;font-size:14px}
+.product button{margin-top:10px;width:100%;padding:10px;border:none;border-radius:10px;background:transparent;border:1px solid #7a5cff;color:#fff;cursor:pointer}
+.product button:hover{background:#7a5cff}
+
+.cart{position:fixed;right:20px;bottom:20px;background:#7a5cff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;cursor:pointer}
+
+@media(max-width:768px){
+.hero{padding:20px}
+.hero h1{font-size:30px}
+.features{flex-direction:column;gap:10px;margin-top:20px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Aureola Shop</div>
+<nav>
+<a href="#">Strona główna</a>
+<a href="#">Produkty</a>
+<a href="#">O nas</a>
+<a href="#">Kontakt</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Świeć jaśniej.<br><span>Jedź bezpiecznie.</span></h1>
+<p>RGB LED stroboskopowe światła do auta i motocykla</p>
+<button class="btn">Zobacz produkty</button>
+</div>
+</section>
+
+<div class="features">
+<div class="feature">Wysoka jakość</div>
+<div class="feature">Wodoodporne IP65</div>
+<div class="feature">8 kolorów RGB</div>
+<div class="feature">Pilot bezprzewodowy</div>
+<div class="feature">USB ładowanie</div>
+</div>
+
+<div class="section-title">BESTSELLERY</div>
+
+<div class="products">
+
+<div class="product">
+<img src="https://img.kwcdn.com/product/fancy/99733f18-7602-4a18-83c7-dbbf677af7ea.jpg">
+<h3>2 sztuki LED</h3>
+<div class="price">100 zł <span class="old">111 zł</span></div>
+<button>Dodaj do koszyka</button>
+</div>
+
+<div class="product">
+<img src="https://img.kwcdn.com/product/fancy/99733f18-7602-4a18-83c7-dbbf677af7ea.jpg">
+<h3>4 sztuki LED</h3>
+<div class="price">100 zł <span class="old">111 zł</span></div>
+<button>Dodaj do koszyka</button>
+</div>
+
+<div class="product">
+<img src="https://img.kwcdn.com/product/fancy/99733f18-7602-4a18-83c7-dbbf677af7ea.jpg">
+<h3>6 sztuk LED</h3>
+<div class="price">100 zł <span class="old">111 zł</span></div>
+<button>Dodaj do koszyka</button>
+</div>
+
+<div class="product">
+<img src="https://img.kwcdn.com/product/fancy/99733f18-7602-4a18-83c7-dbbf677af7ea.jpg">
+<h3>8 sztuk LED</h3>
+<div class="price">100 zł <span class="old">111 zł</span></div>
+<button>Dodaj do koszyka</button>
+</div>
+
+</div>
+
+<div class="cart">🛒</div>
+
+</body>
+</html>
